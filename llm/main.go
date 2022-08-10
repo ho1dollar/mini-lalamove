@@ -43,7 +43,7 @@ func main() {
 }
 
 func handleErr(errMsg string, errCode int) {
-	fmt.Println(errMsg)
+	fmt.Println("ERR: " + errMsg)
 	os.Exit(errCode)
 }
 
