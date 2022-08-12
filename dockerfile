@@ -11,6 +11,3 @@ RUN go build -o llm
 FROM alpine as runtime
 COPY --from=build /llm/llm /usr/local/bin/llm
 COPY ./llm/orders.json /
-# COPY setup.sh /
-# RUN chmod +x /setup.sh
-# ENTRYPOINT [ "./setup.sh"]

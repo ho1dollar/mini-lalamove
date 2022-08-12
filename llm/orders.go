@@ -15,12 +15,12 @@ type order struct {
 func getOrders() (orders []order) {
 	fileBytes, err := ioutil.ReadFile("./orders.json")
 	if err != nil {
-		handleErr("failed to read file", 1)
+		handleErr("Failed to read file", 1)
 	}
 
 	err = json.Unmarshal(fileBytes, &orders)
 	if err != nil {
-		handleErr("failed to unmarshal json", 1)
+		handleErr("Failed to unmarshal json", 1)
 	}
 
 	return orders
@@ -52,13 +52,13 @@ func makeOrder(from string, to string) (id int) {
 func saveOrders(orders []order) {
 	orderByte, err := json.Marshal(orders)
 	if err != nil {
-		handleErr("failed to marshal json", 1)
+		handleErr("Failed to marshal json", 1)
 	}
 
 	err = ioutil.WriteFile("./orders.json", orderByte, 0644)
 
 	if err != nil {
-		handleErr("failed to write file", 1)
+		handleErr("Failed to write file", 1)
 	}
 
 	return
