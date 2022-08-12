@@ -1,6 +1,5 @@
 # Mini-Lalamove
-## My Name: Ho Yat Man Peter
-## Email: peter539@live.hk
+## My Name: Ho Yat Man Peter                Email: peter539@live.hk
 
 This application is implemented in Go with the use of contiainer.
 
