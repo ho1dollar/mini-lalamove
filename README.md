@@ -1,7 +1,7 @@
 # Mini-Lalamove
 This application is implemented in Go with the use of contiainer.
 
-It is my first time to build an command line application. I take it as an opportunity to learn the Go language and give a try to the container development workflow to show that I am a fast learner as well as a competitive candidate for this position.
+It is my first time to build a command line application. I take it as an opportunity to learn the Go language and give a try to the container development workflow to show that I am a fast learner as well as a competitive candidate for this position.
 
 ## Getting Started
 
